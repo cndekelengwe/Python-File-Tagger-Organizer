@@ -29,12 +29,14 @@ Before running the program, make sure you have the following installed:
 
 **Step-By_Step Processs**
 
-1. Download the Project, which can be found named as python_file_organizer.py in the main directory. Save the Python file in a folder that you can easily locate later. Ensure the file is saved with the .py extension.
+1. Download the Project, which can be found named as python_file_organizer.py in the main directory. Save the Python file in a **folder** that you can easily locate later. Ensure the file is saved with the .py extension.
 
 2. Open the Terminal application on your Mac.
 3. Type the following command into Terminal:
    
-   ```_python3 --version_```
+   ```
+   python3 --version
+   ```
 
      a. If your Python version is 3.10 or later, skip to step 4.
    
@@ -43,88 +45,93 @@ Before running the program, make sure you have the following installed:
    
 5. Install Homebrew (Only if Needed)
    
-     a. First, try installing the tag utility by typing: _brew install tag_
-        If you didn't receive an error, skip to step 5. But if you receive the error: zsh: command not found: brew
-        then Homebrew is not installed.
+   a. First, try installing the tag utility by typing:
+
+        
+        brew install tag
+        
    
-     b. Install Homebrew by entering:
+   If you receive the error: zsh: command not found: brew then Homebrew is not installed. But if you don't skip
+   to step 6.
    
-       ```_/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"_```
+   b. Install Homebrew by entering:
+   
+       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+You will be prompted to enter your Mac password. Nothing will appear on the screen while you type your password. This is a normal macOS security feature. Simply type your password and press Enter.
 
-Once the installation is complete, Homebrew will display additional setup instructions.
+Once the installation is complete, Homebrew will display additional setup instructions. Once the installation is complete, Homebrew will display additional setup instructions.
 
-Step 5: Add Homebrew to Your Terminal Path
+6. Add Homebrew to Your Terminal Path
 
 Your username appears at the beginning of each Terminal line.
 
-Example:
+Example: candacendekelengwe@Candaces-MacBook-Air. In this example, the username is: candacendekelengwe
 
-candacendekelengwe@Candaces-MacBook-Air
-
-In this example, the username is:
-
-candacendekelengwe
-
-Replace username in the commands below with your own username.
+**Replace username in the commands below with your own username.**
 
 Run each command one at a time:
 
+```
 echo >> /Users/username/.zprofile
-
-Example:
-
-echo >> /Users/candacendekelengwe/.zprofile
-
-Next, type:
-
-echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/username/.zprofile
-
-Finally, type:
-
-eval "$(/opt/homebrew/bin/brew shellenv zsh)"
-
-To verify that Homebrew was installed successfully, type:
-
-brew --version
-
-If Homebrew is installed correctly, a version number will be displayed. The exact version may vary depending on when it was installed.
-
-Step 6: Install the Tag Utility
-
-Type:
-
-brew install tag
-
-Wait for the installation to finish before continuing.
-
-Step 7: Navigate to the Project Folder
-
-To determine your current directory, type:
-
-pwd
-
-Locate the folder containing your Python program.
-
-Then use the cd command to navigate to that folder.
+```
 
 For example:
 
-cd Downloads/File_organizer
+_echo >> /Users/candacendekelengwe/.zprofile_
 
-You can easily find the folder path by opening Finder and locating your project folder.
+Next, type:
 
-Step 8: Run the Program
+```
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/username/.zprofile
+```
 
-Run the program using:
+Finally, type:
 
-python3 filename.py
+```
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+```
 
-Replace filename.py with the name of your Python file.
+To verify that Homebrew was installed successfully, type:
 
-Example:
+```
+brew --version
+```
 
-python3 python_file_organizer.py
+If Homebrew is installed correctly, a version number will be displayed. The exact version may vary, as the installer downloads the latest stable release available at the time of installation.
 
-The program will then guide you through c
+7. Install the Tag Utility
 
+Type:
+
+```
+brew install tag
+```
+
+Wait for the installation to finish before continuing. Check if Tag was successfully installed by typing
+
+```
+tag -version
+```
+
+8. Navigate to the Project Folder with the Python file
+
+To determine your current directory, type:
+
+```
+pwd
+```
+
+Locate the folder containing your Python program. Then use the cd command to navigate to that folder. For example:
+
+cd /Users/candacendekelengwe/Downloads/File_organizer
+
+You can easily find the folder path by opening Finder, clicking on the folder (not the Python file), then holding down Command + Option + C.
+
+9. Run the Program
+
+Run the program using: python3 filename.py
+
+Replace filename.py with the name of your Python file, for example:  python3 python_file_organizer.py
+
+The program will then guide you through creating, viewing, or removing Finder tags from your files.
