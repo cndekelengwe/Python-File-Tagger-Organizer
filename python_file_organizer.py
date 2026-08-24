@@ -3,25 +3,9 @@ import subprocess
 import plistlib
 import subprocess
 
-# Gets files from downlaod and saves it
+
 download_folder = Path.home() / "Downloads" # gets the downloads
-# print(user_folder)
-
-# for file in download_folder.iterdir():  # .iterdir() -  allows to loop through 
-#     print(file.name)
-
-# basically allows to be saved in apple tag in programming language (needs a different version of python)
-# def add_finder_tag(file_path, tag_name):
-#     tag_data = [f"{tag_name}\n0"] #weird format in which finder stores tags
-
-#     # Mac-specifi part aka the data in a special Apple formart called Property List (plist)
-#     plist_data = plistlib.dumps(tag_data, fmt=plistlib.FMT_BINARY)
-
-#     os.setxattr(
-#         file_path,
-#         b"com.apple.metadata:_kMDItemUserTags",
-#         plist_data
-#     )
+    
 
 action = input("Would you like to create a tag or remove a tag? (create/remove): ").lower()
 if action == "create":
@@ -78,14 +62,6 @@ if action == "create":
 
 
     #Permenanatly saving tag folder
-
-    # if confirmation == "yes":
-    #     with open("tags.json", "w") as file:
-    #         json.dump(tagged_files, file, indent=4)
-    #     print("Tags saved.")
-    # else:
-    #     print("Changes discarded.")
-
 elif action == "remove":
     tag_name = input("Enter the Tag name to be removed: ")
     def remove_finder_tag(file_path, tag_name):
