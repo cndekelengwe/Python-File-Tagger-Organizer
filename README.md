@@ -43,7 +43,7 @@ Before running the program, make sure you have the following installed:
      b. If you do not have Python 3.10 or later installed, download and install the latest version from:
         https://www.python.org/downloads/macos/
    
-5. Install Homebrew (Only if Needed)
+4. Install Homebrew (Only if Needed)
    
    a. First, try installing the tag utility by typing:
 
@@ -62,7 +62,7 @@ You will be prompted to enter your Mac password. Nothing will appear on the scre
 
 Once the installation is complete, Homebrew will display additional setup instructions. Once the installation is complete, Homebrew will display additional setup instructions.
 
-6. Add Homebrew to Your Terminal Path
+5. Add Homebrew to Your Terminal Path
 
 Your username appears at the beginning of each Terminal line.
 
@@ -100,7 +100,7 @@ brew --version
 
 If Homebrew is installed correctly, a version number will be displayed. The exact version may vary, as the installer downloads the latest stable release available at the time of installation.
 
-7. Install the Tag Utility
+6. Install the Tag Utility
 
 Type:
 
@@ -114,7 +114,7 @@ Wait for the installation to finish before continuing. Check if Tag was successf
 tag -version
 ```
 
-8. Navigate to the Project Folder with the Python file
+7. Navigate to the Project Folder with the Python file
 
 To determine your current directory, type:
 
@@ -128,7 +128,7 @@ cd /Users/candacendekelengwe/Downloads/File_organizer
 
 You can easily find the folder path by opening Finder, clicking on the folder (not the Python file), then holding down Command + Option + C.
 
-9. Run the Program
+8. Run the Program
 
 Run the program using: python3 filename.py
 
